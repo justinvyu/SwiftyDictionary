@@ -1,0 +1,6 @@
+framework module SwiftyDictionary {
+  umbrella header "SwiftyDictionary-umbrella.h"
+
+  export *
+  module * { export * }
+}

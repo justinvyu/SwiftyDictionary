@@ -1,0 +1,30 @@
+{
+  "name": "SwiftyDictionary",
+  "version": "0.1.0",
+  "summary": "A Swift wrapper for the Dictionary API",
+  "description": "This Cocoapod allows developers to use the Dictionary API from Merriam Webster",
+  "homepage": "https://github.com/justinvyu/SwiftyDictionary",
+  "license": "MIT",
+  "authors": {
+    "Justin Yu": "justin.v.yu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/justinvyu/SwiftyDictionary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SwiftyDictionary": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.0"
+    ]
+  }
+}

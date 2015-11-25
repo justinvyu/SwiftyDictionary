@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SwiftyDictionary
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var thesaurus = Thesaurus(key: "3331ed63-3bb7-417a-b930-e309e402b54a")
     }
 
     override func didReceiveMemoryWarning() {
