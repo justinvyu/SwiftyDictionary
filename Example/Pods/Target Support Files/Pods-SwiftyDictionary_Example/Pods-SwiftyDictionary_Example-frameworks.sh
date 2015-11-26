@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SwiftyDictionary_Example/AEXML.framework"
   install_framework "Pods-SwiftyDictionary_Example/Alamofire.framework"
   install_framework "Pods-SwiftyDictionary_Example/SwiftyDictionary.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SwiftyDictionary_Example/AEXML.framework"
   install_framework "Pods-SwiftyDictionary_Example/Alamofire.framework"
   install_framework "Pods-SwiftyDictionary_Example/SwiftyDictionary.framework"
 fi
