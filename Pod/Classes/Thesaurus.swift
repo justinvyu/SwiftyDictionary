@@ -36,9 +36,18 @@ public class Thesaurus {
 
     // MARK: - Public Methods
 
-    public func fetchSynonyms(word: String, limit: Int) -> [String] {
+    public func fetchSynonyms(word: String, limit: Int, callback: ArrayCallback) {
         let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
-        request.makeAPIRequest()
-        return []
+        request.makeAPIRequest() { data in
+            var synonymArray: [String] = []
+            for term in data.root.children {
+                for def in term["sens"].all! {
+                    let synonyms = def["syn"].value?.componentsSeparatedByString(", ")
+                    let noRepeat = synonyms!.filter { $0 != word }
+                    synonymArray += noRepeat
+                }
+            }
+            callback(synonymArray)
+        }
     }
 }

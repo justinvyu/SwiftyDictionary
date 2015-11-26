@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AEXML
 
 public class DictionaryRequest {
 
@@ -27,11 +28,19 @@ public class DictionaryRequest {
 
     // MARK: - Request Functions
 
-    func makeAPIRequest() {
+    func makeAPIRequest(callback: DictionaryRequestCallback) {
         let url = getRequestUrl()
         Alamofire.request(.GET, url)
-                 .responseJSON { response in
-                    print(response)
+                 .responseData { response in
+                    do {
+                        if let data = response.data {
+                            let formattedData = try AEXMLDocument(xmlData: data)
+                            callback(formattedData)
+                        }
+                    }
+                    catch {
+                        print("\(error)")
+                    }
                  }
     }
 
