@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 public class Thesaurus {
 
@@ -31,5 +32,13 @@ public class Thesaurus {
         }
         print("Error: Dictionary API key is not valid")
         return false
+    }
+
+    // MARK: - Public Methods
+
+    public func fetchSynonyms(word: String, limit: Int) -> [String] {
+        let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
+        request.makeAPIRequest()
+        return []
     }
 }
