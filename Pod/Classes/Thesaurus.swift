@@ -10,30 +10,7 @@ import Foundation
 import Alamofire
 import AEXML
 
-public class Thesaurus {
-
-    // MARK: - Properties
-
-    var apiKey: String!
-
-    // MARK: - Lifecycle
-
-    public init(key: String) {
-        if authenticateKey(key) {
-            apiKey = key
-        }
-    }
-
-    // MARK: - Authenticating Key
-
-    func authenticateKey(key: String) -> Bool {
-        let keyArray = key.componentsSeparatedByString("-")
-        if keyArray.count == 5 {
-            return true
-        }
-        print("Error: Dictionary API key is not valid")
-        return false
-    }
+public class Thesaurus: Reference {
 
     // MARK: - Public Methods
 
@@ -53,18 +30,39 @@ public class Thesaurus {
         }
     }
 
+    public func fetchSynonymsWithSeparation(word: String, callback: SeparatedArrayCallback) {
+
+    }
+
+
     func parseSynonymData(word: String, data: AEXMLDocument) -> [String] {
         var synonymArray: [String] = []
-        for term in data.root.children {
-            for def in term["sens"].all! {
-                var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
-                synonyms = synonyms!.map({ synonym in
-                    return synonym.componentsSeparatedByString(" ")[0]
-                })
-                let noRepeat = synonyms!.filter { $0 != word }
-                synonymArray += noRepeat
+        print(data.root["entry"].allWithAttributes([ "id" : word ]))
+
+        // Remove entries that don't match the word
+        if let relevantWords = data.root["entry"].allWithAttributes([ "id" : word ]) {
+            for term in relevantWords {
+                for def in term["sens"].all! {
+                    var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
+
+                    synonyms = synonyms!.map { synonym in
+                        var split = synonym.componentsSeparatedByString(" ")
+
+                        // Filter for only words that matter
+                        split = split.filter {
+                            !$0.containsString("(") && !$0.containsString(")")
+                            && !$0.containsString("[") && !$0.containsString("]")
+                        }
+
+                        return split.joinWithSeparator(" ")
+                    }
+
+                    // Need to test again for a word like big(s)
+                    let noRepeat = synonyms!.filter { $0 != word && !$0.containsString("(") && !$0.containsString(")") }
+                    synonymArray += noRepeat
+                }
             }
         }
-        return uniq(synonymArray)
+        return uniq(synonymArray) // remove double entries
     }
 }

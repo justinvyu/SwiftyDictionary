@@ -15,9 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let thesaurus = Thesaurus(key: "3331ed63-3bb7-417a-b930-e309e402b54a")
-        thesaurus.fetchSynonyms("fantasy") { results in
+        thesaurus.fetchSynonyms("big") { results in
             for result in results {
                 print(result)
             }

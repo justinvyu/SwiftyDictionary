@@ -17,7 +17,7 @@ public enum SwiftyDictionaryType {
 
 public typealias DictionaryRequestCallback = (AEXMLDocument) -> Void
 public typealias ArrayCallback = ([String]) -> Void
-
+public typealias SeparatedArrayCallback = ([[String]]) -> Void
 
 struct SwiftyDictionary {
     static let API_ROOT_PATH = NSURL(string: "http://www.dictionaryapi.com/api/v1/references/")

@@ -9,31 +9,33 @@
 /* Begin PBXBuildFile section */
 		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB79292121B8679354444885084C499B /* Response.swift */; };
 		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE399A960ED093FE43BB08CC01E797A /* Upload.swift */; };
+		0EB456A159D81C824FD1B7E60A891354 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF7A1F925D2167C2759159169DFBC3 /* Reference.swift */; };
 		1311302961DE67CCEDC448458D808862 /* Pods-SwiftyDictionary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A216EEE6DAF8A58DD9A339B17593E /* Pods-SwiftyDictionary_Example-dummy.m */; };
 		1772B928990EED2FACB500BEDC4098A6 /* Pods-SwiftyDictionary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B35DC03A7F07A3A14C2FC1778B558AA5 /* Pods-SwiftyDictionary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 029539C3AB78DBBAF9A60E67F5E2E1FA /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		438D67D809EBC2AC950710622C6D48E5 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98436AEB412667E62A20C8088170BC7D /* AEXML-dummy.m */; };
 		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACABD58822F4481CF306F66127B6F4 /* ParameterEncoding.swift */; };
-		4F80F11EE9B24F749488554AB2565B19 /* SwiftyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E29F0212686277450C746FC398AAD /* SwiftyDictionary.swift */; };
-		5227ADB002BB8097198C0B335A8074C2 /* SwiftyDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32744127E0ABDA91F84CC81AA6698B02 /* SwiftyDictionary-dummy.m */; };
+		50FF648EECBA3CFE6773E4E03B52D262 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E4CD92B9A3367E7913EE2F74F3726 /* Dictionary.swift */; };
+		5E7C627B2048B8F240057396AB7DF03B /* SwiftyDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32744127E0ABDA91F84CC81AA6698B02 /* SwiftyDictionary-dummy.m */; };
 		647875A2D006AB11BF61A9271B54D30D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B24BA4A270038D2981E5197B84E43 /* Foundation.framework */; };
 		68583D5F6DBDBA9E4900AAF74D049CE1 /* SwiftyDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 983D691ABC6DA74B976E84B21BE0197C /* SwiftyDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C1ACD5485C84EFB2CAB2E1B1D3E9B0D /* Thesaurus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F8D1D18FF3B66D7C14487D74FCF21 /* Thesaurus.swift */; };
 		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67B0B4F960558A35B0978808727E8C /* ServerTrustPolicy.swift */; };
 		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340B0B2D8298AB98526FF48845D1F3D /* Result.swift */; };
 		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C10B6F45B92E1549DFB9BD1A8AD74 /* MultipartFormData.swift */; };
 		88906001EF8AA8F1D3FD70342CA002CF /* SwiftyDictionary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CD88EBC681C5C0142D6B9524413BA75 /* SwiftyDictionary.bundle */; };
+		8D831D82841865731E2B65A33174F595 /* SwiftyDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A262F1DE9EFF0700BFDB143C854F76 /* SwiftyDictionary.swift */; };
 		96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B24BA4A270038D2981E5197B84E43 /* Foundation.framework */; };
-		9EEFE0384206307E447DC767A4BF8A71 /* DictionaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66F66B2DC9027DF86BFEE884FE651F /* DictionaryRequest.swift */; };
 		A0B0AEF7DC2DBD99CD5AE9AE9D90DF0C /* Pods-SwiftyDictionary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A75E3759907402B639DB77A1E219E7 /* Pods-SwiftyDictionary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31802378453828794CEA68E37D5142A1 /* Manager.swift */; };
 		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81764AAC1F18DDE15EFC1FA2848B3E82 /* Download.swift */; };
 		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C733539243615385A891F4499795CC7 /* Alamofire.swift */; };
 		B2BFCED9FF905FFDF60F535380A16A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B24BA4A270038D2981E5197B84E43 /* Foundation.framework */; };
+		B2C39C8F6880CFC15724B9FD03B2A506 /* Thesaurus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC6BC85213BFFA406C811BD3B31B6B /* Thesaurus.swift */; };
 		B34367EF1C0015A2234F6C7FBF125196 /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A929AB4E9527E415374B02731F0B3850 /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F1BFC9694548DB219C9D6DE796B11 /* Alamofire-dummy.m */; };
 		B924801E4329494F48005E58D52F1B16 /* Pods-SwiftyDictionary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBEA29DF3253A12B896D1C5D90B20 /* Pods-SwiftyDictionary_Tests-dummy.m */; };
 		BE40C942A10D7DD49424055BC57A385A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B24BA4A270038D2981E5197B84E43 /* Foundation.framework */; };
+		C2AC37B65D43B53A362AEEC0E387CB77 /* DictionaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E76B153B2C2A68611F93B028299EC /* DictionaryRequest.swift */; };
 		C6992CA742228E5F6D7FF1111F0124C7 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E64F9CD5D761B31AAA9C1AC2A4FFC2B /* AEXML.swift */; };
 		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3897D009EBBA1277014F880F1B2713 /* Validation.swift */; };
 		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01631D8D3F32AD92A432342D9DC5C75 /* ResponseSerialization.swift */; };
@@ -134,19 +136,24 @@
 		2C03D5DCA4B6EDDC58D394437ED9B2A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31802378453828794CEA68E37D5142A1 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
 		32744127E0ABDA91F84CC81AA6698B02 /* SwiftyDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyDictionary-dummy.m"; sourceTree = "<group>"; };
+		32A262F1DE9EFF0700BFDB143C854F76 /* SwiftyDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyDictionary.swift; sourceTree = "<group>"; };
 		334C10B6F45B92E1549DFB9BD1A8AD74 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		39DA2619465474CB30BB57BA5D6C3602 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B671629B221E70C4052165A32F13EC3 /* Pods-SwiftyDictionary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyDictionary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3EAAC08EEB91C790BF68A39B9DABB19C /* Pods_SwiftyDictionary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyDictionary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		423553C87799ADBA9CA1AA34A9FA0FFE /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		42A75E3759907402B639DB77A1E219E7 /* Pods-SwiftyDictionary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyDictionary_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5C9E76B153B2C2A68611F93B028299EC /* DictionaryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryRequest.swift; sourceTree = "<group>"; };
+		5D1E4CD92B9A3367E7913EE2F74F3726 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		64F961552B2128CF5A1CAB5975620DBA /* Pods-SwiftyDictionary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyDictionary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6C733539243615385A891F4499795CC7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		73C66C2D01398CCC6809B45487624B0C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		81764AAC1F18DDE15EFC1FA2848B3E82 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		84DF7A1F925D2167C2759159169DFBC3 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		862B24BA4A270038D2981E5197B84E43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		898A8A8BEA9384EA22B56D05A1E8AD14 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A67B0B4F960558A35B0978808727E8C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8CAC6BC85213BFFA406C811BD3B31B6B /* Thesaurus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Thesaurus.swift; sourceTree = "<group>"; };
 		8CD88EBC681C5C0142D6B9524413BA75 /* SwiftyDictionary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyDictionary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E64F9CD5D761B31AAA9C1AC2A4FFC2B /* AEXML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEXML.swift; path = Source/AEXML.swift; sourceTree = "<group>"; };
 		93ACABD58822F4481CF306F66127B6F4 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -166,14 +173,11 @@
 		BF6613FBAE07BD236E65293C345F453A /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
 		C098181CB7D44E1A25038960891E115B /* SwiftyDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyDictionary-prefix.pch"; sourceTree = "<group>"; };
 		C5D1A7E64C5821C43B54690FDCE21D6F /* Pods-SwiftyDictionary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyDictionary_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CA66F66B2DC9027DF86BFEE884FE651F /* DictionaryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryRequest.swift; sourceTree = "<group>"; };
 		CBABF8994A6D0D192479184717B7D13A /* Pods-SwiftyDictionary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyDictionary_Tests.modulemap"; sourceTree = "<group>"; };
 		D0451C1502752BD9A37F4A947687F9F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D154752A645791FC7B15741B72709837 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		D5228D71D0E72D2F118FBB4A29CEBF23 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
 		DB79292121B8679354444885084C499B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		E09F8D1D18FF3B66D7C14487D74FCF21 /* Thesaurus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Thesaurus.swift; sourceTree = "<group>"; };
-		E92E29F0212686277450C746FC398AAD /* SwiftyDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyDictionary.swift; sourceTree = "<group>"; };
 		E991E7876FEDA9AA0A35BED5747256E4 /* Pods-SwiftyDictionary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyDictionary_Example.modulemap"; sourceTree = "<group>"; };
 		F01631D8D3F32AD92A432342D9DC5C75 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		FA299F41FDEE90178EF6506D40305A41 /* Pods-SwiftyDictionary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyDictionary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -308,7 +312,7 @@
 		6B1B3CD073573D9E570670B0C50B4170 /* SwiftyDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				9B733EEA8999BA820ACA3614938657F2 /* Pod */,
+				F723BCBC27DB0950CF8EB592CD834FFB /* Pod */,
 				124789715BF8C7A118ED0335E7088602 /* Support Files */,
 			);
 			name = SwiftyDictionary;
@@ -325,16 +329,6 @@
 				A8EFA426D635B166FA4270490377F4DF /* Products */,
 				2F5E4B1A132F3BD9B77961B816A397D8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		81B8532BD5F9311794FA5E3A4B56F86A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CA66F66B2DC9027DF86BFEE884FE651F /* DictionaryRequest.swift */,
-				E92E29F0212686277450C746FC398AAD /* SwiftyDictionary.swift */,
-				E09F8D1D18FF3B66D7C14487D74FCF21 /* Thesaurus.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		84C6C42354C78764844DE10346AB2BEE /* iOS */ = {
@@ -363,14 +357,6 @@
 			path = "Target Support Files/Pods-SwiftyDictionary_Example";
 			sourceTree = "<group>";
 		};
-		9B733EEA8999BA820ACA3614938657F2 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				81B8532BD5F9311794FA5E3A4B56F86A /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		A8EFA426D635B166FA4270490377F4DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +368,18 @@
 				FDBBE6065A2FD32F92C66E321B2F87D8 /* SwiftyDictionary.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A9BC6211E76B90FEE455C8BD5848A9D8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5D1E4CD92B9A3367E7913EE2F74F3726 /* Dictionary.swift */,
+				5C9E76B153B2C2A68611F93B028299EC /* DictionaryRequest.swift */,
+				84DF7A1F925D2167C2759159169DFBC3 /* Reference.swift */,
+				32A262F1DE9EFF0700BFDB143C854F76 /* SwiftyDictionary.swift */,
+				8CAC6BC85213BFFA406C811BD3B31B6B /* Thesaurus.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		AC619045755D8515D0E7F049FEBCF683 /* Support Files */ = {
@@ -437,6 +435,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AEXML";
+			sourceTree = "<group>";
+		};
+		F723BCBC27DB0950CF8EB592CD834FFB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A9BC6211E76B90FEE455C8BD5848A9D8 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,7 +586,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B1577981146C72B66ECA334FF27BF6E /* Build configuration list for PBXNativeTarget "SwiftyDictionary" */;
 			buildPhases = (
-				2427AA986BBC5BC485626A7B6C75AAD3 /* Sources */,
+				E4C335047D6E07B2DF69008F1FD78D75 /* Sources */,
 				8A213E3575E4B79031C59024EE9672B0 /* Frameworks */,
 				A17BB41309EC8C974C370D5689403344 /* Resources */,
 				8C6F450B9F6C020826BB767BF2E773BD /* Headers */,
@@ -647,17 +653,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2427AA986BBC5BC485626A7B6C75AAD3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EEFE0384206307E447DC767A4BF8A71 /* DictionaryRequest.swift in Sources */,
-				5227ADB002BB8097198C0B335A8074C2 /* SwiftyDictionary-dummy.m in Sources */,
-				4F80F11EE9B24F749488554AB2565B19 /* SwiftyDictionary.swift in Sources */,
-				6C1ACD5485C84EFB2CAB2E1B1D3E9B0D /* Thesaurus.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		32D690109B9DD68214E8541A2446CCEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,6 +682,19 @@
 			files = (
 				438D67D809EBC2AC950710622C6D48E5 /* AEXML-dummy.m in Sources */,
 				C6992CA742228E5F6D7FF1111F0124C7 /* AEXML.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C335047D6E07B2DF69008F1FD78D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FF648EECBA3CFE6773E4E03B52D262 /* Dictionary.swift in Sources */,
+				C2AC37B65D43B53A362AEEC0E387CB77 /* DictionaryRequest.swift in Sources */,
+				0EB456A159D81C824FD1B7E60A891354 /* Reference.swift in Sources */,
+				5E7C627B2048B8F240057396AB7DF03B /* SwiftyDictionary-dummy.m in Sources */,
+				8D831D82841865731E2B65A33174F595 /* SwiftyDictionary.swift in Sources */,
+				B2C39C8F6880CFC15724B9FD03B2A506 /* Thesaurus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
