@@ -37,7 +37,6 @@ public class Thesaurus: Reference {
 
     func parseSynonymData(word: String, data: AEXMLDocument) -> [String] {
         var synonymArray: [String] = []
-        print(data.root["entry"].allWithAttributes([ "id" : word ]))
 
         // Remove entries that don't match the word
         if let relevantWords = data.root["entry"].allWithAttributes([ "id" : word ]) {
@@ -46,6 +45,8 @@ public class Thesaurus: Reference {
                     var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
 
                     synonyms = synonyms!.map { synonym in
+                        //print(synonym)
+
                         var split = synonym.componentsSeparatedByString(" ")
 
                         // Filter for only words that matter
@@ -53,12 +54,14 @@ public class Thesaurus: Reference {
                             !$0.containsString("(") && !$0.containsString(")")
                             && !$0.containsString("[") && !$0.containsString("]")
                         }
-
+                        
                         return split.joinWithSeparator(" ")
                     }
 
                     // Need to test again for a word like big(s)
-                    let noRepeat = synonyms!.filter { $0 != word && !$0.containsString("(") && !$0.containsString(")") }
+                    let noRepeat = synonyms!.filter {
+                        $0 != "" && $0 != word && !$0.containsString("(") && !$0.containsString(")")
+                    }
                     synonymArray += noRepeat
                 }
             }
