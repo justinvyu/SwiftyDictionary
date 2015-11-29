@@ -30,10 +30,14 @@ public class Thesaurus: Reference {
         }
     }
 
+    // Separates synonyms by different definitions
     public func fetchSynonymsWithSeparation(word: String, callback: SeparatedArrayCallback) {
-
+        let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
+        request.makeAPIRequest { data in
+            let separatedSynonymArray = self.parseSynonymDataWithSeparation(word, data: data)
+            callback(separatedSynonymArray)
+        }
     }
-
 
     func parseSynonymData(word: String, data: AEXMLDocument) -> [String] {
         var synonymArray: [String] = []
@@ -42,30 +46,50 @@ public class Thesaurus: Reference {
         if let relevantWords = data.root["entry"].allWithAttributes([ "id" : word ]) {
             for term in relevantWords {
                 for def in term["sens"].all! {
-                    var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
-
-                    synonyms = synonyms!.map { synonym in
-                        //print(synonym)
-
-                        var split = synonym.componentsSeparatedByString(" ")
-
-                        // Filter for only words that matter
-                        split = split.filter {
-                            !$0.containsString("(") && !$0.containsString(")")
-                            && !$0.containsString("[") && !$0.containsString("]")
-                        }
-                        
-                        return split.joinWithSeparator(" ")
-                    }
-
-                    // Need to test again for a word like big(s)
-                    let noRepeat = synonyms!.filter {
-                        $0 != "" && $0 != word && !$0.containsString("(") && !$0.containsString(")")
-                    }
-                    synonymArray += noRepeat
+                    synonymArray += arrayOfSynonyms(fromDef: def, withWord: word)
                 }
             }
         }
         return uniq(synonymArray) // remove double entries
+    }
+
+    func parseSynonymDataWithSeparation(word: String, data: AEXMLDocument) -> [[String]] {
+        var synonymArray: [[String]] = []
+
+        if let relevantWords = data.root["entry"].allWithAttributes([ "id" : word ]) {
+            for term in relevantWords {
+                for def in term["sens"].all! {
+                    synonymArray.append(arrayOfSynonyms(fromDef: def, withWord: word))
+                }
+            }
+        }
+
+        return synonymArray
+    }
+
+    func arrayOfSynonyms(fromDef def: AEXMLElement, withWord word: String) -> [String] {
+
+        var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
+
+        synonyms = synonyms!.map { synonym in
+            //print(synonym)
+
+            var split = synonym.componentsSeparatedByString(" ")
+
+            // Filter for only words that matter
+            split = split.filter {
+                !$0.containsString("(") && !$0.containsString(")")
+                    && !$0.containsString("[") && !$0.containsString("]")
+            }
+
+            return split.joinWithSeparator(" ")
+        }
+
+        // Need to test again for a word like big(s)
+        let noRepeat = synonyms!.filter {
+            $0 != "" && $0 != word && !$0.containsString("(") && !$0.containsString(")")
+        }
+
+        return noRepeat
     }
 }
