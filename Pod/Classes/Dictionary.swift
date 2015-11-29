@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class Dictionary {
+public class Dictionary: Reference {
 
-    
+    // MARK: - Public Methods
 
 }

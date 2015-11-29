@@ -44,11 +44,6 @@ public class DictionaryRequest {
                  }
     }
 
-    func makeAPIRequestSynchronous() -> AEXMLDocument {
-        let url = getRequestUrl()
-        
-    }
-
     func getRequestUrl() -> NSURL {
         var urlString = ""
 

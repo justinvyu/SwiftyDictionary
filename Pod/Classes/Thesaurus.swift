@@ -26,7 +26,7 @@ public class Thesaurus: Reference {
         let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
         request.makeAPIRequest() { data in
             let synonymArray = self.parseSynonymData(word, data: data)
-            callback(Array(synonymArray.prefix(limit)))
+            callback(Array(synonymArray.prefix(limit > 0 ? limit : 0)))
         }
     }
 
@@ -38,6 +38,8 @@ public class Thesaurus: Reference {
             callback(separatedSynonymArray)
         }
     }
+
+    // MARK: - Data Extraction
 
     func parseSynonymData(word: String, data: AEXMLDocument) -> [String] {
         var synonymArray: [String] = []

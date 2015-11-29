@@ -18,15 +18,15 @@ class ViewController: UIViewController {
 
         let thesaurus = Thesaurus(key: "3331ed63-3bb7-417a-b930-e309e402b54a")
 
-//        thesaurus.fetchSynonyms("big") { results in
-//            for result in results {
-//                print(result)
-//            }
-//        }
-
-        thesaurus.fetchSynonymsWithSeparation("big") { results in
-            print(results)
+        thesaurus.fetchSynonymsWithSeparation("quickly") { results in
+            for result in results {
+                print(result)
+            }
         }
+
+//        thesaurus.fetchSynonymsWithSeparation("big") { results in
+//            print(results)
+//        }
 
     }
 
