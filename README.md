@@ -7,7 +7,11 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+This pod should be used with the Dictionary API found at
+[API Link](dictionaryapi.com).
+
+To run the example project, clone the repo, and run `pod install` from the
+Example directory first.
 
 ## Requirements
 
@@ -25,6 +29,52 @@ pod "SwiftyDictionary"
 ## Quickstart
 
 The basic features of this pod are the Dictionary and Thesaurus classes.
+
+### Dictionary
+
+Not finished...
+
+### Thesaurus
+
+To instantiate a thesaurus, all you need to do is provide an API key.
+
+```swift
+let thesaurus = Thesaurus(key: "YOUR-API-KEY")
+```
+
+To find synonyms, simply provide a word and a callback that handles the result.
+
+```swift
+let thesaurus = Thesaurus(key: "YOUR-API-KEY")
+
+thesaurus.fetchSynonyms("big") { results in
+    // Display results, an array of synonyms for the word "big"
+    for result in results {
+        print(result)
+    }
+}
+```
+
+You can also set a limit on the number of results you receive.
+
+```swift
+thesaurus.fetchSynonyms("big", limit: 5) { results in
+    ...
+}
+```
+
+If you want to separate the synonyms by the different definitions of the word,
+use the `fetchSynonymsWithSeparation` method.
+
+```swift
+thesaurus.fetchSynonymsWithSeparation("big") { results in
+    // Display results: an array containing arrays of synonym string, separated by
+    // the different definitions of the word "big"
+    for result in results {
+        print(result)
+    }
+}
+```
 
 ## Todo
 
