@@ -32,9 +32,9 @@ The basic features of this pod are the Dictionary and Thesaurus classes.
     - [ ] Get definitions (array of all possible definitions)
     - [ ] Get part of speech as an array for different definitions
     - [ ] Get a sample sentence
-- [ ] Thesaurus
-    - [ ] Get all synonyms (regardless of different definitions)
-    - [ ] Get all synonyms as an array of arrays of synonyms (accounting for different definitions)
+- [x] Thesaurus (more features later)
+    - [x] Get all synonyms (regardless of different definitions)
+    - [x] Get all synonyms as an array of arrays of synonyms (accounting for different definitions)
 
 ## Author
 

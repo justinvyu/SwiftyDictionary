@@ -72,8 +72,6 @@ public class Thesaurus: Reference {
         var synonyms = def["syn"].value?.componentsSeparatedByString(", ")
 
         synonyms = synonyms!.map { synonym in
-            //print(synonym)
-
             var split = synonym.componentsSeparatedByString(" ")
 
             // Filter for only words that matter
