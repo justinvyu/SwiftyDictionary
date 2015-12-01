@@ -19,8 +19,9 @@ public typealias DictionaryRequestCallback = (AEXMLDocument) -> Void
 public typealias ArrayCallback = ([String]) -> Void
 public typealias SeparatedArrayCallback = ([[String]]) -> Void
 
-struct SwiftyDictionary {
+struct SwiftyDictionaryConstants {
     static let API_ROOT_PATH = NSURL(string: "http://www.dictionaryapi.com/api/v1/references/")
+    static let OBSOLETE = "obsolete"
 }
 
 func uniq<S : SequenceType, T : Hashable where S.Generator.Element == T>(source: S) -> [T] {

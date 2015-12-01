@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 import AEXML
 
-public class Thesaurus: Reference {
+public class SwiftyThesaurus: Reference {
 
     // MARK: - Public Methods
 
-    public func fetchSynonyms(word: String, callback: ArrayCallback) {
+    public func fetchSynonyms(forWord word: String, callback: ArrayCallback) {
         let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
         request.makeAPIRequest() { data in
             let synonymArray = self.parseSynonymData(word, data: data)
@@ -22,7 +22,7 @@ public class Thesaurus: Reference {
         }
     }
 
-    public func fetchSynonyms(word: String, limit: Int, callback: ArrayCallback) {
+    public func fetchSynonyms(forWord word: String, limit: Int, callback: ArrayCallback) {
         let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
         request.makeAPIRequest() { data in
             let synonymArray = self.parseSynonymData(word, data: data)
@@ -31,7 +31,7 @@ public class Thesaurus: Reference {
     }
 
     // Separates synonyms by different definitions
-    public func fetchSynonymsWithSeparation(word: String, callback: SeparatedArrayCallback) {
+    public func fetchSynonymsWithSeparation(forWord word: String, callback: SeparatedArrayCallback) {
         let request = DictionaryRequest(word: word, action: .Thesaurus, key: apiKey)
         request.makeAPIRequest { data in
             let separatedSynonymArray = self.parseSynonymDataWithSeparation(word, data: data)

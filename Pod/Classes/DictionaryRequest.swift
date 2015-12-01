@@ -50,7 +50,7 @@ public class DictionaryRequest {
         if let word = word, action = action, key = apiKey {
             urlString += "\(action == .Dictionary ? "collegiate" : "thesaurus")/xml/\(word)?key=\(key)"
         }
-        return NSURL(string: urlString, relativeToURL: SwiftyDictionary.API_ROOT_PATH)!
+        return NSURL(string: urlString, relativeToURL: SwiftyDictionaryConstants.API_ROOT_PATH)!
     }
 
 }
