@@ -30,7 +30,9 @@ class ViewController: UIViewController {
 
         let dictionary = SwiftyDictionary(key: "0ee35d7e-940b-41d0-82ef-4ff8a6ad98ea")
         dictionary.fetchDefinition(forWord: "swift") { results in
-            
+            for result in results {
+                print(result)
+            }
         }
 
     }

@@ -26,13 +26,18 @@ public class SwiftyDictionary: Reference {
                         return
                     }
 
+                    var definitions: [String] = []
+
                     for def in entry["def"].all! {
                         for dt in def["dt"].all! {
-                            print("inside")
                             let newVal = dt.stringValue.stringByReplacingOccurrencesOfString(":", withString: "")
-                            print(newVal)
+                            if newVal != "" {
+                                definitions.append(newVal)
+                            }
                         }
                     }
+
+                    callback(definitions)
 
                 }
             }
